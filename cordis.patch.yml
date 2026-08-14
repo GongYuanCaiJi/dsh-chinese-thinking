@@ -1,0 +1,11 @@
+# dsh-chinese-thinking bundle layer.
+#
+# When this package is listed in a profile's dsh.profile.bundles, this patch
+# inserts one plugin row. The row's config defaults come from the plugin's
+# Config schema (index.js); a user overrides the whole config in their own
+# cordis.patch.yml layer (later layers win; a patch REPLACES the entire
+# config, it does not deep-merge).
+- insert:
+    - id: chinese-thinking
+      name: 'dsh-chinese-thinking'
+      config: {}

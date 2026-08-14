@@ -1,0 +1,46 @@
+{
+  "name": "dsh-chinese-thinking",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：让 agent 默认用中文思考与回复（移植自 superpowers-zh）",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prompt.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "prepare": "npm run test",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "chinese",
+    "中文",
+    "i18n",
+    "system-prompt"
+  ],
+  "license": "MIT",
+  "author": "GongYuanCaiJi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GongYuanCaiJi/dsh-chinese-thinking.git"
+  },
+  "homepage": "https://github.com/GongYuanCaiJi/dsh-chinese-thinking#readme",
+  "bugs": {
+    "url": "https://github.com/GongYuanCaiJi/dsh-chinese-thinking/issues"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
