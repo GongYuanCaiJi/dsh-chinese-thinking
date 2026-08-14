@@ -2,13 +2,16 @@
 //
 // 移植来源：superpowers-zh v1.7.10（github.com/jnMetaCode/superpowers-zh，MIT）。
 //
-// 忠实性声明：本文件里的每一行「内容行」都与上游 skill 正文逐字相同（区块
-// 上方都标注了来源文件；上游 markdown 的 ``` 代码围栏被去掉，这是唯一的
-// 系统性格式改动，因为这段文字要作为 system prompt 节渲染）。本插件的自有
-// 主张只有三行：开头的「默认用中文思考，用中文输出……」（来自本插件的存在
-// 理由 —— Discussions #320「让中文模型按中文思考」；上游最接近的原文是
-// using-superpowers 的路由规则「用户用中文交流 → 所有输出使用中文，优先
-// 考虑中国特色技能」）以及各分节标题。逐字核验脚本见 THIRD_PARTY_NOTICES.md。
+// 忠实性声明：CHINESE_THINKING_TEXT 共 187 行，其中 179 行「内容行」与
+// 上游 skill 正文逐字相同（区块上方都标注了来源文件；上游 markdown 的 ```
+// 代码围栏被去掉，这是唯一的系统性格式改动，因为这段文字要作为 system
+// prompt 节渲染）。其余 8 行为本插件的自有主张：标题「# 中文思考（Chinese
+// Thinking）」、开头引导句（来自本插件的存在理由 —— Discussions #320「让
+// 中文模型按中文思考」；上游最接近的原文是 using-superpowers 的路由规则
+// 「用户用中文交流 → 所有输出使用中文，优先考虑中国特色技能」）以及 6 个
+// 分节标题。模板字面量无法原样容纳反引号，因此「命令和代码」那一行拆成单
+// 引号字符串拼接（见正文），文件与渲染值都与上游逐字相同。逐行对账脚本：
+// node scripts/verify-verbatim.mjs（哈希与核对方法见 THIRD_PARTY_NOTICES.md）。
 
 export const CHINESE_THINKING_TEXT = `# 中文思考（Chinese Thinking）
 
@@ -118,7 +121,7 @@ See the documentation (README.md) for details.
 
 - 专有名词：React、Kubernetes、Redis、MySQL
 - 行业通用缩写：API、SDK、CLI、ORM、CI/CD
-- 命令和代码：\`npm install\`、\`git commit\`
+- 命令和代码：` + '`npm install`、`git commit`' + `
 - 协议和标准：HTTP、TCP/IP、JSON、REST
 - 没有公认中文翻译的术语：debounce、throttle、middleware
 
@@ -198,4 +201,4 @@ See the documentation (README.md) for details.
 
 **核心原则：** 工作流服务于团队效率，不是为了流程而流程。选适合团队规模的，别硬套大厂方案。`;
 
-export default CHINESE_THINKING_TEXT;
+

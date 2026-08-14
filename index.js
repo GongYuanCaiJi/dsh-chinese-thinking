@@ -23,16 +23,24 @@ export const name = 'dsh-chinese-thinking';
 
 export const inject = ['systemPrompt'];
 
+// Single source of truth for the preset defaults — shared by the Config
+// schema and apply()'s fallback so the two can never silently diverge.
+const DEFAULTS = {
+  enabled: true,
+  order: 60,
+  text: CHINESE_THINKING_TEXT,
+};
+
 export const Config = z.object({
-  enabled: z.boolean().default(true),
+  enabled: z.boolean().default(DEFAULTS.enabled),
   // Order band: -100 harness identity, 0 persona, 100–199 tool guidance.
   // 60 sits right after the persona, before tool guidance.
-  order: z.number().default(60),
-  text: z.string().default(CHINESE_THINKING_TEXT),
+  order: z.number().default(DEFAULTS.order),
+  text: z.string().default(DEFAULTS.text),
 });
 
 export function apply(ctx, config = {}) {
-  const { enabled = true, order = 60, text = CHINESE_THINKING_TEXT } = config;
+  const { enabled = DEFAULTS.enabled, order = DEFAULTS.order, text = DEFAULTS.text } = config;
   if (!enabled) return;
 
   ctx.systemPrompt.section({

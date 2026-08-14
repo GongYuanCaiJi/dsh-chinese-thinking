@@ -33,6 +33,16 @@ self-verifiable:
 
 ### Self-verify
 
+Line-level verbatim reconciliation (evaluates `prompt.js`, splits the
+exported value by newline, and compares every line against the five pinned
+files — expected result: 187 lines = 179 verbatim + 8 declared port-authored):
+
+```bash
+node scripts/verify-verbatim.mjs
+```
+
+Tarball integrity of the pinned upstream:
+
 ```bash
 npm pack superpowers-zh@1.7.10
 shasum -a 256 superpowers-zh-1.7.10.tgz
@@ -51,13 +61,17 @@ shasum -a 256 package/skills/using-superpowers/SKILL.md \
 
 - **Verbatim:** every content line of `CHINESE_THINKING_TEXT` in `prompt.js`
   (section bodies, rules, examples) is byte-identical to a line in the five
-  files above. The only systematic formatting change: upstream's markdown
-  code fences (```` ``` ````) are removed, because the text renders as a
-  system-prompt section.
-- **Port-authored (not upstream):** the section title lines and the opening
-  directive "默认用中文思考，用中文输出" — the plugin's own claim, grounded in
-  the upstream routing rule "用户用中文交流 → 所有输出使用中文，优先考虑中国
-  特色技能" (using-superpowers/SKILL.md:88).
+  files above. Reconciled by `scripts/verify-verbatim.mjs`: the exported value
+  has 187 lines — 179 byte-identical to the five files, plus the 8 declared
+  port-authored lines below. The only systematic formatting change:
+  upstream's markdown code fences (```` ``` ````) are removed, because the
+  text renders as a system-prompt section.
+- **Port-authored (not upstream):** 8 lines total — the title
+  `# 中文思考（Chinese Thinking）`, the opening directive "你是面向中文用户
+  的编程助手。默认用中文思考，用中文输出。……", and the 6 section-title
+  lines (each labeled "来自 …" with its source file). The opening is the
+  plugin's own claim, grounded in the upstream routing rule "用户用中文交流 →
+  所有输出使用中文，优先考虑中国特色技能" (using-superpowers/SKILL.md:88).
 - **Not copied:** the rest of the upstream package (its installer, hooks,
   other skills, README). The port ships only the 中文思考预设 surface: one
   `ctx.systemPrompt` section, no tools, no events.

@@ -28,11 +28,7 @@
 
 ## 安装 / Installation
 
-```bash
-dsh plugin --profile <你的 profile> add dsh-chinese-thinking
-```
-
-还没发布到 npm 时，用本地路径：
+本插件尚未发布到 npm（`dsh-chinese-thinking` 这个名字已验证可注册），目前用本地路径安装：
 
 ```bash
 npm install   # 先装依赖（@deepseek-ai/schemastery）
@@ -110,11 +106,7 @@ After installation, a "Chinese Thinking" section is added to the agent's system 
 
 ## Installation
 
-```bash
-dsh plugin --profile <your-profile> add dsh-chinese-thinking
-```
-
-Not published to npm yet — use a local path:
+This plugin is not published to npm yet (the name `dsh-chinese-thinking` is verified available), so install from a local path:
 
 ```bash
 npm install   # installs @deepseek-ai/schemastery first

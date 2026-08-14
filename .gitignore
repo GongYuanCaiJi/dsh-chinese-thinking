@@ -6,3 +6,6 @@ dist/
 *.tgz
 .env
 .env.*
+*.log
+.dispatch.log
+.codereview.log

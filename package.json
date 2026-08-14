@@ -4,10 +4,13 @@
   "description": "DeepSeek Harness 插件：让 agent 默认用中文思考与回复（移植自 superpowers-zh）",
   "type": "module",
   "main": "index.js",
+  "types": "./index.d.ts",
   "files": [
     "index.js",
+    "index.d.ts",
     "prompt.js",
     "cordis.patch.yml",
+    "scripts/verify-verbatim.mjs",
     "README.md",
     "LICENSE",
     "THIRD_PARTY_NOTICES.md"
