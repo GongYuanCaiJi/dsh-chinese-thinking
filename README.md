@@ -9,7 +9,6 @@
 **Makes your DeepSeek Harness agent think and answer in Chinese by default.**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/dsh-chinese-thinking)](https://www.npmjs.com/package/dsh-chinese-thinking)
 [![dsh-plugin](https://img.shields.io/badge/dsh-plugin-ok-green)](https://github.com/topics/dsh-plugin)
 
 </div>
@@ -67,7 +66,7 @@ dsh plugin --profile <你的 profile> add ./dsh-chinese-thinking
 
 ## 移植来源 / Upstream
 
-本插件是 [**superpowers-zh**](https://github.com/jnMetaCode/superpowers-zh)（MIT，9,245 下载/月，7,663★）的移植（port）。提示词正文逐字来自其 `chinese-documentation`、`chinese-code-review`、`chinese-commit-conventions`、`chinese-git-workflow` 与 `using-superpowers` 五个 skill 正文，源文件 SHA-256 已钉在 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，可自行核验。
+本插件是 [**superpowers-zh**](https://github.com/jnMetaCode/superpowers-zh)（MIT，9k+ 下载/月，7.6k★）的移植（port）。提示词正文逐字来自其 `chinese-documentation`、`chinese-code-review`、`chinese-commit-conventions`、`chinese-git-workflow` 与 `using-superpowers` 五个 skill 正文，源文件 SHA-256 已钉在 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，可自行核验。
 
 - 上游仓库：[jnMetaCode/superpowers-zh](https://github.com/jnMetaCode/superpowers-zh)
 - 上游 npm：[superpowers-zh](https://www.npmjs.com/package/superpowers-zh)
@@ -87,12 +86,11 @@ MIT。见 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md
 
 # dsh-chinese-thinking · Chinese Thinking Default
 
-🌐 [简体中文](#) | **English**
+🌐 [简体中文](#dsh-chinese-thinking--中文思考预设) | **English**
 
 **Makes your DeepSeek Harness agent think and answer in Chinese by default.**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/dsh-chinese-thinking)](https://www.npmjs.com/package/dsh-chinese-thinking)
 [![dsh-plugin](https://img.shields.io/badge/dsh-plugin-ok-green)](https://github.com/topics/dsh-plugin)
 
 </div>
@@ -150,7 +148,7 @@ Override example (in your profile's own `cordis.patch.yml` — a patch replaces 
 
 ## Upstream
 
-This plugin is a **port** of [**superpowers-zh**](https://github.com/jnMetaCode/superpowers-zh) (MIT, 9,245 downloads/month, 7,663★). The prompt body is copied verbatim from its `chinese-documentation`, `chinese-code-review`, `chinese-commit-conventions`, `chinese-git-workflow`, and `using-superpowers` skill bodies; source SHA-256 hashes are pinned in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for self-verification.
+This plugin is a **port** of [**superpowers-zh**](https://github.com/jnMetaCode/superpowers-zh) (MIT, 9k+ downloads/month, 7.6k★). The prompt body is copied verbatim from its `chinese-documentation`, `chinese-code-review`, `chinese-commit-conventions`, `chinese-git-workflow`, and `using-superpowers` skill bodies; source SHA-256 hashes are pinned in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for self-verification.
 
 - Upstream repo: [jnMetaCode/superpowers-zh](https://github.com/jnMetaCode/superpowers-zh)
 - Upstream npm: [superpowers-zh](https://www.npmjs.com/package/superpowers-zh)

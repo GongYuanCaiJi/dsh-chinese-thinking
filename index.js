@@ -7,10 +7,10 @@
 // THIRD_PARTY_NOTICES.md for the pinned upstream integrity and SHA-256 hashes
 // that make the verbatim claim self-verifiable.
 //
-// Design (per deepseek-harness research/portfolio-loop r3-decision BET 1):
-// exactly ONE ctx.systemPrompt section, no tools, no events. The section text
-// is the plugin's Config default, so a user can override it in their own
-// cordis.patch.yml layer (a patch replaces a row's entire config wholesale).
+// Design: exactly ONE ctx.systemPrompt section — no tools, no events. The
+// section text is the plugin's Config default, so a user can override it in
+// their own cordis.patch.yml layer (a patch replaces a row's entire config
+// wholesale).
 //
 // Exports are the Cordis "namespace" entry contract — no `export default`
 // (the loader's unwrapExports drops `inject` if we use one).

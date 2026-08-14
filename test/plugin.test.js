@@ -1,6 +1,6 @@
 // dsh-chinese-thinking — plugin contract tests (node --test).
 //
-// Two axes, per the port playbook:
+// Two axes:
 //  1. The ported CONTENT itself is tested (not only the new adapter shell):
 //     CHINESE_THINKING_TEXT must carry the verbatim upstream markers — a
 //     truncation or rewording of the copied content fails here.

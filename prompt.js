@@ -16,7 +16,7 @@ export const CHINESE_THINKING_TEXT = `# 中文思考（Chinese Thinking）
 
 ## 中文场景识别（来自 using-superpowers 的中国特色技能路由）
 
-当检测到以下场景时，优先采用中国特色规范：
+当检测到以下场景时，**必须**优先调用对应的中国特色技能：
 
 - 项目中有中文注释、中文 README、或 .gitee 目录 → 启用中文系列技能
 - commit 历史中有中文 → 使用中文提交规范
@@ -188,7 +188,7 @@ See the documentation (README.md) for details.
 
 ## 中文提交规范（来自 chinese-commit-conventions/SKILL.md）
 
-基于 Conventional Commits 1.0.0 规范，针对中文团队的实际使用习惯进行适配：
+基于 Conventional Commits 1.0.0 规范，针对中文团队的实际使用习惯进行适配。
 
 - type 保留英文关键字（工具链兼容性好）
 - scope 和 description 使用中文

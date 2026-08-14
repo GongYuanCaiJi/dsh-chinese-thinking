@@ -59,8 +59,8 @@ shasum -a 256 package/skills/using-superpowers/SKILL.md \
   the upstream routing rule "用户用中文交流 → 所有输出使用中文，优先考虑中国
   特色技能" (using-superpowers/SKILL.md:88).
 - **Not copied:** the rest of the upstream package (its installer, hooks,
-  other skills, README). This ticket ports only the 中文思考预设 surface
-  (r3-decision BET 1: one `ctx.systemPrompt` section, no tools, no events).
+  other skills, README). The port ships only the 中文思考预设 surface: one
+  `ctx.systemPrompt` section, no tools, no events.
 
 ## License
 
