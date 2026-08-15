@@ -74,6 +74,8 @@ dsh plugin --profile <你的 profile> add .
 
 MIT。见 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
+授权/合规询问 → [GitHub issues](https://github.com/GongYuanCaiJi/dsh-chinese-thinking/issues)
+
 ---
 
 <a id="english"></a>
@@ -151,3 +153,5 @@ If you find this useful, **please star the upstream superpowers-zh too** ⭐
 ## License
 
 MIT. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+License/compliance inquiries → [GitHub issues](https://github.com/GongYuanCaiJi/dsh-chinese-thinking/issues)
