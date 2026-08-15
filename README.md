@@ -32,7 +32,7 @@
 
 ```bash
 npm install   # 先装依赖（@deepseek-ai/schemastery）
-dsh plugin --profile <你的 profile> add ./dsh-chinese-thinking
+dsh plugin --profile <你的 profile> add .
 ```
 
 装完重启 dsh，开一段新对话即可生效。
@@ -110,7 +110,7 @@ This plugin is not published to npm yet (the name `dsh-chinese-thinking` is veri
 
 ```bash
 npm install   # installs @deepseek-ai/schemastery first
-dsh plugin --profile <your-profile> add ./dsh-chinese-thinking
+dsh plugin --profile <your-profile> add .
 ```
 
 Restart dsh and start a new conversation to activate.
